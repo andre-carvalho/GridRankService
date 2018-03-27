@@ -1,0 +1,12 @@
+# To run this compose file
+# docker-compose -f environment/docker-compose.yml up
+
+version: '3'
+services:
+  web:
+    image: pyapp
+    command: gunicorn -b 0.0.0.0:5000 wsgi:api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../mservice/src:/usr/local/mservice/src

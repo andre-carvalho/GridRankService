@@ -1,0 +1,14 @@
+[deter]
+input_prefix: Cbers4_AWFI
+input_sufix: 8bits_CMASK
+output_cloud_prefix: cloud
+output_rank_prefix: rank
+jobber_sufix: {'tb1':'intersect','tb2':'cell_grid','tb3':'multi_to_single'}
+default_schema: public
+sequence: cloud_rank_tmp_seq
+cell_table: cell_table_name
+grid_table: grid_table_name
+identify_cells: identify_cells_table_name
+ta_schema: terraamazon
+ta_scene: ta_scene
+ta_tasklogs: ta_celllog

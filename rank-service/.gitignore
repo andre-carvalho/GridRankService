@@ -1,0 +1,8 @@
+# app config files
+/src/config/*.cfg
+
+# python cache
+/src/__pycache__/
+
+# ignore log files
+*.log
